@@ -25,7 +25,7 @@ const VENDEDORES_MOCK = [
         rating: 4.7,
         descricao:"Dedicada exclusivamente à moda infantil, com peças criativas e confortáveis para crianças de 0 a 12 anos.",
         pedido: 150,
-        fundada: 2010
+        fundada: 
     }
 ]
 
