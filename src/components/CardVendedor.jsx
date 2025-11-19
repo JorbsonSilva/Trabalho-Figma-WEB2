@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const CardVendedor = ({vendedor}) =>{
     const {nome, local, nota, avaliacoes, produtos, seguidores, fundada, minPedido, 
-        especialidades, qualidades} = vendedor;
+        especialidades, qualidades,image, premium, id} = vendedor;
     return ( 
     <div className="card-vendedor">
         {premium && <span className="premium-tag">Qualidade Premium</span>}
@@ -19,7 +19,7 @@ const CardVendedor = ({vendedor}) =>{
             <div className="vendedor-status">
                 <div className="status-itens">
                     <span className="rating">⭐</span>
-                    <span className="status-valor">{nota}</span>
+                    <span className="status-valor">{nota}({avaliacoes})</span>
                 </div>
             </div>       
         </div>
