@@ -1,10 +1,10 @@
 import Header from "@/components/header/Header";
 
-export default function ContatoPage(){
+export default function SobrePage(){
     return (
         <main>
             <Header/>
-            <h1>Pagina Início</h1>
+            <h1>Pagina Sobre</h1>
         </main>
     )
 }

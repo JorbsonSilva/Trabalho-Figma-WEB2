@@ -1,7 +1,18 @@
+'use client';
+
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 import Button from "../Button";
 import Image from "next/image";
 import styles from "./Header.module.css";
 
+const navItems = [
+    { label: 'Início', href: '/' },
+    { label: 'Produtos', href: '/produtos' },
+    { label: 'Vendedores', href: '/vendedores' },
+    { label: 'Sobre', href: '/sobre' },
+    { label: 'Contato', href: '/contato' },
+];
 
 const HeaderTop = () => {
     return (
@@ -39,13 +50,30 @@ const HeaderMain = () => {
 };
 
 const HeaderNav = () =>{
+    const pathname = usePathname();
+
     return(
         <div className={styles["header-main-nav"]}>
-            <Button className={`${styles.navButton} ${styles.active}`}>Início</Button>
-            <Button className={styles.navButton}>Produtos</Button>
-            <Button className={styles.navButton}>Vendedores</Button>
-            <Button className={styles.navButton}>Sobre</Button>
-            <Button className={styles.navButton}>Contato</Button>
+            {navItems.map((item) => {
+                // 1. Verifica se o caminho atual começa com o href do item
+                // Usamos startsWith para que páginas aninhadas (ex: /produtos/camisetas) destaquem "Produtos"
+                const isActive = item.href === '/' 
+                    ? pathname === item.href // Caso especial: 'Início' só é ativo na raiz
+                    : pathname.startsWith(item.href);
+
+                // 2. Monta a string de classes (navButton sempre, active se for a página atual)
+                const buttonClasses = `${styles.navButton} ${isActive ? styles.active : ''}`;
+                
+                return (
+                    // 3. Envolve o botão com Link para permitir a navegação
+                    <Link href={item.href} key={item.label} passHref legacyBehavior>
+                        {/* 4. Passa as classes calculadas para o componente Button */}
+                        <Button className={buttonClasses}>
+                            {item.label}
+                        </Button>
+                    </Link>
+                );
+            })}
         </div>
     )
 }
