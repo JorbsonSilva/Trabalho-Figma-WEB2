@@ -2,8 +2,10 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
-  return <div>Página de vendedores</div>;
+  return (
     <div className={styles.page}>
+      <div>Página de vendedores</div>
+
       <main className={styles.main}>
         <Image
           className={styles.logo}
