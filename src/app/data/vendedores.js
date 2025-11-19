@@ -70,7 +70,7 @@ export const vendedoresData = [
     imagem: "/images/denim-brasil.webp",
     premium: true,
   },{
-    id: 4,
+    id: 6,
     nome: "Polo Caruaru",
     local: "Rendeira, Caruaru - PE",
     nota: 4.6,

@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-const CardVendedor = ({vendedor}) =>{
+const CardVendedor = ({vendedorData}) =>{
     const {nome, local, nota, avaliacoes, produtos, seguidores, fundada, minPedido, 
-        especialidades, qualidades,image, premium, id} = vendedor;
+        especialidades, qualidades,image, premium, id} = vendedorData;
     return ( 
     <div className="card-vendedor">
         {premium && <span className="premium-tag">Qualidade Premium</span>}
@@ -29,9 +29,7 @@ const CardVendedor = ({vendedor}) =>{
             ))}
         </div>
         <div className="card-acao">
-            <Link href={'/loja/${id}'} passHref>
-                <a className="botao-ver-loja">Ver Loja</a>
-            </Link>
+            <Link href={'/loja/${id}'} className="botao-ver-loja">Ver Loja</Link>
             <button className="botao-seguir">Seguir</button>
         </div>
         
