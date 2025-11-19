@@ -17,7 +17,7 @@ const navItems = [
 const HeaderTop = () => {
     return (
         <div className={styles['header-top-bar']}>
-            <span><Image src="/images/location-pin.svg" alt="Localização" width={14} height={14} />Caruaru, PE - Polo Têxtil do Nordeste</span>
+            <span><Image src="/images/location-pin.png" alt="Localização" width={14} height={14} />Caruaru, PE - Polo Têxtil do Nordeste</span>
             <span>(81) 3000-0000</span>
         </div>
     )
