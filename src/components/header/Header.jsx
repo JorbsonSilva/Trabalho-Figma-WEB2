@@ -27,7 +27,7 @@ const HeaderMain = () => {
     return (
         <div className={styles["header-main-bar"]}>
             <div className={styles.logo}>
-                <Image src="/images/logo-icon.svg" alt="Caruaru Têxtil Hub" width={30} height={30} />
+                <Image src="/images/logo-icon.png" alt="Caruaru Têxtil Hub" width={30} height={30} />
                 <div>
                     <h2>Caruaru Têxtil Hub</h2>
                     <p>A Sua Loja Online</p>
