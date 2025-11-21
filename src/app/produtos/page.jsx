@@ -11,7 +11,7 @@ function ProductCard({ title, price, oldPrice, imageUrl, discount }) {
             </div>
 
             <div className={styles['product-details']}>
-                <p className={styles['product-category']}>Categoria Aqui</p>
+                <p className={styles['product-category']}></p>
                 <h3 className={styles['product-title']}>{title}</h3>
                 <div className={styles['product-rating']}>
                     ⭐⭐⭐⭐ (99) 
@@ -28,11 +28,11 @@ function ProductCard({ title, price, oldPrice, imageUrl, discount }) {
 
 export default function ProdutosPage() {
     const mockProducts = [
-        { id: 1, title: "Calça Jeans Premium Masculina", price: "45.90", oldPrice: "120.00", discount: 61, imageUrl: "https://placehold.co/300x300/F5F5F5/333333?text=Calca+Jeans" },
-        { id: 2, title: "Kit 5 Camisetas Básicas", price: "89.90", oldPrice: "130.00", discount: 30, imageUrl: "https://placehold.co/300x300/F5F5F5/333333?text=Camisetas+Kit" },
-        { id: 3, title: "Blusa Feminina Manga Longa", price: "38.90", oldPrice: "58.00", discount: 33, imageUrl: "https://placehold.co/300x300/F5F5F5/333333?text=Blusa+Feminina" },
-        { id: 4, title: "Bermuda Jeans Masculina", price: "42.00", oldPrice: "60.00", discount: 30, imageUrl: "https://placehold.co/300x300/F5F5F5/333333?text=Bermuda+Jeans" },
-        { id: 5, title: "Polo Masculina Premium", price: "55.90", oldPrice: "78.90", discount: 29, imageUrl: "https://placehold.co/300x300/F5F5F5/333333?text=Polo+Masculina" },
+        { id: 1, title: "Calça Jeans Premium Masculina", price: "45,90", oldPrice: "120,00", discount: 61, imageUrl: "https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg" },
+        { id: 2, title: "Kit 5 Camisetas Básicas", price: "89,90", oldPrice: "130,00", discount: 30, imageUrl: "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg" },
+        { id: 3, title: "Blusa Feminina Manga Longa", price: "38,90", oldPrice: "58,00", discount: 33, imageUrl: "https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg" },
+        { id: 4, title: "Bermuda Jeans Masculina", price: "42,00", oldPrice: "60,00", discount: 30, imageUrl: "https://images.pexels.com/photos/13662830/pexels-photo-13662830.jpeg" },
+        { id: 5, title: "Polo Masculina Premium", price: "55,90", oldPrice: "78,90", discount: 29, imageUrl: "https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg" },
     ];
 
     return (
@@ -78,7 +78,7 @@ export default function ProdutosPage() {
                 <section className={styles['product-list-area']}>
                     
                     <div className={styles['sort-bar']}>
-                        <p>Mostrando **{mockProducts.length}** produtos</p>
+                        <p>Mostrando {mockProducts.length} produtos</p>
                         <select className={styles['sort-select']}>
                             <option>Mais Relevantes</option>
                             <option>Menor Preço</option>
