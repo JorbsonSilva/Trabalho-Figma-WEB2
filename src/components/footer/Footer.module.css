@@ -1,0 +1,19 @@
+.footerPrincipal {
+    background-color: #333; 
+    color: white; 
+    padding: 40px 0;
+}
+
+.footerContent {    
+    display: grid;    
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr; 
+    gap: 30px;    
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+
+.footerContent ul {
+    list-style: none; 
+    padding: 0;
+}
