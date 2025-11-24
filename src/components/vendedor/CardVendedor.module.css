@@ -18,7 +18,7 @@
 
 .cardContent {
     
-    padding: 15px;
+    padding: 15px 25px;
     display: flex;
     flex-direction: column;
 }
@@ -66,6 +66,43 @@
     white-space: nowrap; 
 }
 
+.qualidadesTag {
+    display: inline-flex; 
+    background-color: #72e283c3;
+    color: #289738; 
+    padding: 4px 10px;     
+    border-radius: 16px; 
+    font-size: 0.75rem; 
+    white-space: nowrap; 
+}
+
+.vendedorInfos {
+    display: flex; 
+    justify-content: flex-start; 
+    gap: 40px;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed #cbcbcb; 
+}
+
+.infoItem {    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.infoLabel {    
+    font-size: 0.8rem;
+    color: #777;
+    margin-bottom: 4px;
+}
+
+.infoValor {    
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: #333;
+}
+
 .botoesAcao {
     display: flex; 
     align-items: stretch;
@@ -86,6 +123,7 @@
     font-weight: bold;
     text-decoration: none;
 }
+
 .botaoSeguir {
     flex: 1;
     display: flex;  

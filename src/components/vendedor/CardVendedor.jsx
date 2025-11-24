@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./CardVendedor.module.css";
 
 const CardVendedor = ({vendedorData}) =>{
-    const {nome, local, nota, avaliacoes, produtos, seguidores, fundada, minPedido, 
+    const {nome, local, nota, avaliacoes, produtos, seguidores, descricao, fundada, minPedido, 
         especialidades, qualidades, imagem, premium, id} = vendedorData;
     return ( 
     <div className={styles.cardVendedor}>
@@ -28,8 +28,30 @@ const CardVendedor = ({vendedorData}) =>{
                     <span key={tag} className={styles.especialidadeTag}>{tag}</span>
                 ))}
             </div>
+            <p className="descricao">{descricao}</p>
             
-                 
+            <div className={styles.vendedorInfos}>
+        
+                <div className={styles.infoItem}>
+                    <span className={styles.infoLabel}>Fundada em:</span> 
+                    <p className={styles.infoValor} >{vendedorData.fundada}</p> 
+                </div>
+            
+                <div className={styles.infoItem}>
+                    <span className={styles.infoLabel}>Pedido mínimo:</span>
+                    <p className={styles.infoValor}>{vendedorData.minPedido}</p>
+                </div>
+
+            </div>             
+
+            <div className={styles.vendedorTags}>
+                {qualidades.map(tag =>(
+                    <span key={tag} className={styles.qualidadesTag}>{tag}</span>
+                ))}
+            </div>
+
+
+            
         </div>
             
         <div className={styles.botoesAcao}>
