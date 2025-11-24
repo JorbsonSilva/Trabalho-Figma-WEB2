@@ -9,11 +9,42 @@
     grid-template-columns: 1.5fr 1fr 1fr 1.5fr; 
     gap: 30px;    
     max-width: 1200px; 
-    margin: 0 auto; 
+    margin: auto; 
+   }
+
+
+.footerContato li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px; 
+    gap: 8px; 
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 250px; 
+    margin-bottom: 15px;
+}
 
-.footerContent ul {
-    list-style: none; 
-    padding: 0;
+.logo h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8e2de2; 
+    margin: 0;
+}
+
+.logo p {
+    font-size: 12px;
+    color: #666;
+    margin: -3px 0 0 0;
+}
+
+.redeSocial {
+    display: flex;
+    justify-content: baseline; 
+    align-items: flex-start;
+    margin-top: 10px;
+    gap: 15px;
 }
