@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./components/login/styles.module.css";
+import styles from "./styles.module.css";
 
 function LoginScreen({ onSwitchToRegister }) {
   return (
