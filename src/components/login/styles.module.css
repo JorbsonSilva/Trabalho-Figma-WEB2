@@ -1,11 +1,27 @@
+/* ========================================= */
+/* 1. MOLDURA MÁGICA: CENTRALIZAÇÃO E FUNDO  */
+/* ========================================= */
+/* Esta classe é chamada pelo LoginScreen.jsx para centralizar tudo */
+.fullScreenCenter {
+    min-height: 100vh;
+    background-color: #1A1C30; /* Fundo Roxo-Marinho Escuro */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+}
+
+/* ========================================= */
+/* 2. CARD PRINCIPAL (LOGIN/CADASTRO)        */
+/* ========================================= */
 .card-principal {
     width: 300px;
     padding: 20px;
-    background-color: #3A2A6E; /* Cor roxa */
+    background-color: #3A2A6E; /* Cor roxa clara */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    margin: 20px auto; 
+    /* CORREÇÃO: Remove a margem fixa para permitir a centralização do fullScreenCenter */
+    margin: 0; 
 }
 .logo-container {
     display: flex;
@@ -26,10 +42,27 @@
     font-size: 16px;
     font-weight: 500;
 }
+
+/* ========================================= */
+/* 3. ORGANIZAÇÃO DOS CAMPOS (FORMULÁRIO)    */
+/* ========================================= */
+/* CORREÇÃO: Esta classe faz todos os campos e botões ficarem em COLUNA */
+.form-content {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; /* Espaço entre os inputs e botões */
+}
+
+/* ========================================= */
+/* 4. ESTILOS DOS INPUTS E BOTÕES            */
+/* ========================================= */
 .input-padrao {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    /* CORREÇÃO: Adiciona fundo branco para aparecer na caixa roxa */
+    background-color: white; 
+    color: black; 
+    margin-bottom: 0; /* A margem é controlada pelo 'gap' do form-content */
     border: none;
     border-radius: 5px;
     box-sizing: border-box;
@@ -37,13 +70,14 @@
 .botao-entrar {
     width: 100%;
     padding: 10px;
-    background-color: #FF5722; /* Cor Laranja */
+    /* CORREÇÃO: Cor Laranja exata do Figma */
+    background-color: #FF6B00; 
     color: white;
     font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Mantém a margem para separar do link "Criar conta" */
 }
 .link-criar-conta, .link-ja-registrado {
     background: none;
@@ -54,7 +88,8 @@
     cursor: pointer;
 }
 .link-ja-registrado {
-    color: #FF5722;
+    /* CORREÇÃO: Cor Laranja exata do Figma */
+    color: #FF6B00; 
     font-weight: bold;
     display: block;
     margin-top: 15px;
