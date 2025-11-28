@@ -9,6 +9,7 @@ import {
   Package, 
   Users 
 } from 'lucide-react';
+import Footer from '@/components/footer/Footer';
 
 export default function CaruaruTextilHub() {
   
@@ -248,6 +249,8 @@ export default function CaruaruTextilHub() {
           </div>
         </div>
       </section>
+      <Footer/>
     </div>
+    
   );
 }

@@ -1,6 +1,7 @@
 import Button from "@/components/Button";
 import Header from "@/components/header/Header";
 import styles from "./produtos.module.css";
+import Footer from "@/components/footer/Footer";
 
 function ProductCard({ title, price, oldPrice, imageUrl, discount }) {
     return (
@@ -107,6 +108,7 @@ export default function ProdutosPage() {
                     </div>
                 </section>
             </div>
+            <Footer/>
         </main>
     );
 }
