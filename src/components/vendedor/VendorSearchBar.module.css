@@ -30,13 +30,13 @@
 }
 
 .filterControls {
-    display: flex; /* <-- ESSENCIAL: Alinha Dropdown, Contador e Toggles */
+    display: flex; 
     align-items: center;
-    gap: 15px; /* Espaçamento entre os itens secundários */
-    flex-shrink: 0; /* Impede que os filtros encolham quando a tela for pequena */
+    gap: 15px; 
+    flex-shrink: 0; 
 }
 
-/* 3. DROPDOWN E CONTADOR: Mantêm seu tamanho fixo */
+
 .filtroDropdown {
     padding: 10px 15px;
     background-color: white;
@@ -45,26 +45,26 @@
     font-size: 1rem;
     color: #555;
     outline: none;
-    flex-shrink: 0; /* Impede que encolha */
-    width: 120px; /* Largura fixa */
+    flex-shrink: 0; 
+    width: 120px; 
 }
 
 .vendorQuantidade {
     margin: 0; 
     font-size: 0.95rem;
     color: #777;
-    flex-shrink: 0; /* Impede que encolha */
-    white-space: nowrap; /* Garante que o texto não quebre */
+    flex-shrink: 0; 
+    white-space: nowrap; 
 }
 
-/* 4. TOGGLES DE VISUALIZAÇÃO: Botões de Grid/Lista */
+
 .viewToggles {
     display: flex;
     gap: 0px; 
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: 2px;
-    flex-shrink: 0; /* Impede que encolha */
+    flex-shrink: 0;
 }
 
 .toggleButton {
@@ -76,7 +76,7 @@
     transition: background-color 0.2s ease;
 }
 
-/* 5. ESTADO ATIVO */
+
 .activeView {
-    background-color: #e0e0e0; /* Cor de fundo para o botão selecionado (Cinza claro) */
+    background-color: #e0e0e0; 
 }
