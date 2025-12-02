@@ -1,7 +1,7 @@
 import Header from "src/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import Button from "@components/Button";
-import CardVendedor from "@/components/vendedor/CardVendedor";
+import CardVendedor from "src/components/vendedor/CardVendedor";
 import VenderSearchBar from "@components/vendedor/VenderSearchBar";
 import { vendedoresData } from "../data/vendedores";
 import styles from "./vendedores.module.css";
