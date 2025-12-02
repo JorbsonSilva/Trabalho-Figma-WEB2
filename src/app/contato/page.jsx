@@ -1,4 +1,4 @@
-import Footer from "@/components/footer/Footer";
+import Footer from "src/components/footer/Footer";
 import Header from "src/components/header/Header";
 
 export default function ContatoPage() {

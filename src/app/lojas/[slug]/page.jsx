@@ -1,6 +1,6 @@
-import Header from '@/components/header/Header';
-import Footer from '@/components/footer/Footer';
-import Button from '@/components/Button';
+import Header from 'src/components/header/Header';
+import Footer from 'src/components/footer/Footer';
+import Button from 'src/components/Button';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { vendedoresData } from 'src/app/data/vendedores';

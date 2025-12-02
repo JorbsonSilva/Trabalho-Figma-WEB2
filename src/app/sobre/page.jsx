@@ -1,5 +1,5 @@
 import Header from "src/components/header/Header";
-import Footer from "@/components/footer/Footer";
+import Footer from "src/components/footer/Footer";
 
 export default function SobrePage(){
     return (
